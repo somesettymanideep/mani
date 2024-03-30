@@ -7512,9 +7512,9 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
 /* .th-hero-wrapper {
   position: relative;
   z-index: 2;
-} */
+} 
 
-/* .th-hero-bg {
+ .th-hero-bg {
   position: absolute;
   inset: 0;
 } */
@@ -7524,7 +7524,7 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
   width: 100%;
   object-fit: cover;
 }
-.background-image, [data-bg-src] {
+#hero{
   height:500px!important;
 }
 /* Hero 1 ---------------------------------- */
@@ -11597,7 +11597,7 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 @media (max-width: 576px) {
-.background-image, [data-bg-src] {
+#hero {
   height:150px!important;
 }
 }
