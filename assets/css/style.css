@@ -7509,22 +7509,24 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
 
 /*------------------- 4.8. Hero Area  -------------------*/
 /* Hero Global ---------------------------------- */
-.th-hero-wrapper {
+/* .th-hero-wrapper {
   position: relative;
   z-index: 2;
-}
+} */
 
-.th-hero-bg {
+/* .th-hero-bg {
   position: absolute;
   inset: 0;
-}
+} */
 
 .th-hero-bg img {
-  height: 100%;
+  height: 100%!important;
   width: 100%;
   object-fit: cover;
 }
-
+.background-image, [data-bg-src] {
+  height:500px!important;
+}
 /* Hero 1 ---------------------------------- */
 .hero-title {
   font-size: 74px;
@@ -11594,7 +11596,11 @@ span.select2-selection.select2-selection--single:focus {
     padding: 30px 20px;
   }
 }
-
+@media (max-width: 576px) {
+.background-image, [data-bg-src] {
+  height:150px!important;
+}
+}
 .location-card:after {
   content: '';
   position: absolute;
@@ -20239,4 +20245,12 @@ span.select2-selection.select2-selection--single:focus {
 /*# sourceMappingURL=style.css.map */
 .th-widget-about .about-logo{
   margin-bottom: 20px!important;
+}
+
+.widget-area {
+  padding-bottom:0px!important;
+  
+}
+.header-layout2 .menu-top {
+  padding: 10px 0;
 }
